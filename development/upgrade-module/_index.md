@@ -1,11 +1,11 @@
 ---
-title: Upgrade Module
+title: Update assistant Module
 weight: 80
 ---
 
-# Upgrade module
+# Update assistant module
 
-Also known as the "Autoupgrade module" or the "1-click upgrade module", PrestaShop upgrade assistant aims to automatize the upgrade process.
+Also known as the "Autoupgrade module" or the "1-click upgrade module", PrestaShop update assistant aims to automatize the upgrade process.
 
 Details on how to use the web interface are documented in [Keep up-to-date: Upgrade Assistant page]({{< ref "/1.7/basics/keeping-up-to-date/use-autoupgrade-module.md" >}}).
 

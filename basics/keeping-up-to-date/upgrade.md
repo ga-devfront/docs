@@ -211,11 +211,11 @@ Modules page, under the tab “Notifications”:
 
 {{< figure src="../img/image38.png" >}}
 
-## 1-click upgrade module
+## Update assistant module
 
 If the manual process seems too tedious, other solutions exist to complete an upgrade.
 
-PrestaShop provides the module 1-click upgrade for free on the marketplace and your shop administration panel. It executes the previously given process automatically, and is available for almost all versions of PrestaShop.
+PrestaShop provides the module Update assistant for free on the marketplace and your shop administration panel. It executes the previously given process automatically, and is available for almost all versions of PrestaShop.
 
 You can read more about it [here]({{< ref "/1.7/basics/keeping-up-to-date/use-autoupgrade-module" >}}).
 
