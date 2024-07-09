@@ -7,7 +7,7 @@ aliases:
 
 # Module CLI
 
-The Autoupgrade module is accessible via `cli`. Its advantages is to be used in conjunction with a CI/CD pipeline to automate your upgrade process. 
+The Update assistant module is accessible via `cli`. Its advantages is to be used in conjunction with a CI/CD pipeline to automate your upgrade process. 
 It can be aswell used manually via regular `cli` to avoid regular configuration limits on Apache or Nginx (`php-cgi`, `php-fpm` limitations such as `memory_limit`, `max_execution_time`, ...). 
 
 ## Upgrade CLI
@@ -63,9 +63,9 @@ $ php modules/autoupgrade/cli-rollback.php --dir=admin-dev --backup=V1.7.5.1_201
 
 To upgrade your PrestaShop store to the latest version using the command line interface, follow the steps outlined below. Make sure to execute all commands from the root directory of your PrestaShop installation and replace `admin-dev` with the name of your back office directory.
 
-### Step 1: Uninstall and remove the old autoupgrade module
+### Step 1: Uninstall and remove the old Update assistant module
 
-1. Uninstall the old AutoUpgrade module:
+1. Uninstall the old Update assistant module:
 
 `php bin/console prestashop:module uninstall autoupgrade`
 
@@ -73,13 +73,13 @@ To upgrade your PrestaShop store to the latest version using the command line in
 
 `rm -rf modules/autoupgrade`
 
-### Step 2: Install the new autoupgrade module
+### Step 2: Install the new Update assistant module
 
-1. Download the latest version of the autoupgrade module and place it in the /modules directory:
+1. Download the latest version of the Update assistant module and place it in the /modules directory:
 
 `curl -L  https://github.com/PrestaShop/autoupgrade/releases/latest/download/autoupgrade.zip -o modules/autoupgrade.zip && cd modules && unzip autoupgrade.zip && cd -`
 
-2. Install the new version of the autoupgrade module:
+2. Install the new version of the Update assistant module:
 
 `php bin/console prestashop:module install autoupgrade`
 
@@ -90,14 +90,14 @@ To upgrade your PrestaShop store to the latest version using the command line in
 `curl -L https://github.com/PrestaShop/PrestaShop/releases/download/8.0.2/prestashop_8.0.2.zip -o admin-dev/autoupgrade/download/prestashop.zip`
 `curl -L https://github.com/PrestaShop/PrestaShop/releases/download/8.0.2/prestashop_8.0.2.xml -o admin-dev/autoupgrade/download/prestashop.xml`
 
-### Step 4: Configure the autoupgrade module
+### Step 4: Configure the Update assistant module
 
-1. Create a configuration file for the AutoUpgrade module to use the local archive. Adjust the settings as needed:
+1. Create a configuration file for the Update assistant module to use the local archive. Adjust the settings as needed:
 
 `echo "{\"channel\":\"archive\",\"archive_prestashop\":\"prestashop.zip\",\"archive_num\":\"8.0.2\", \"archive_xml\":\"prestashop.xml\", \"PS_AUTOUP_CHANGE_DEFAULT_THEME\":0, \"skip_backup\": 1}" > modules/autoupgrade/config.json`
 
 
-2. Apply the configuration to the `autoupgrade` module:
+2. Apply the configuration to the `Update assistant` module:
 
 `php modules/autoupgrade/cli-updateconfig.php --from=modules/autoupgrade/config.json --dir=admin-dev`
 

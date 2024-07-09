@@ -96,6 +96,6 @@ In order to work properly, the upgrade module needs to write some files to your 
 
 - `backup`: Folder in which the current state of the shop will be saved before upgrade. It contains files archive, DB structure & data.
 - `download`: Destination folder of the downloaded PrestaShop archive, before unzip.
-- `latest`: Working directory of the autoupgrade. This is where the "lastest" version of PrestaShop will be unziped, before copy.
+- `latest`: Working directory of the Update assistant. This is where the "lastest" version of PrestaShop will be unziped, before copy.
 - `modules`: Folder where you can put an archive of a module. This one will be used when upgrading modules.
 - `tmp`: Temporary resources not specifically used for upgrade. For instance, logs will be stored in that folder.
