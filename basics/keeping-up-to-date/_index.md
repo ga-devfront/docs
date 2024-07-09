@@ -41,7 +41,7 @@ Note that once an upgrade has started, there is no way to rollback the changes. 
 - Apply the new files by copy-pasting them in the production folder.
 - Run the database upgrade.
 
-This could be enough for completing an upgrade, but additional tasks like cleanup and modules upgrade will bring you stability and security. This is how the `autoupgrade` module works.
+This could be enough for completing an upgrade, but additional tasks like cleanup and modules upgrade will bring you stability and security. This is how the `Update assistant` module works.
 
 ### Migration
 

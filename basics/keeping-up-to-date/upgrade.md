@@ -17,21 +17,21 @@ Learn [how to backup your shop]({{< ref "/9/basics/keeping-up-to-date/backup" >}
 
 There are a few ways of upgrading the PrestaShop store. This chapter provides information about two methods of getting the software to the latest version.
 
-## Upgrade assistant module (formerly 1-click upgrade module)
+## Update assistant module (formerly 1-click upgrade module)
 
-You can use provided `autoupgrade` module to upgrade your store to the newest version using web interface. You can read more about the module and how to use it [here]({{< ref "/9/basics/keeping-up-to-date/use-autoupgrade-module" >}}).
+You can use provided `Update assistant` module to upgrade your store to the newest version using web interface. You can read more about the module and how to use it [here]({{< ref "/9/basics/keeping-up-to-date/use-autoupgrade-module" >}}).
 
-## Upgrade assistant module (formerly 1-click upgrade module) - CLI method
+## Update assistant module (formerly 1-click upgrade module) - CLI method
 
-Upgrade assistant module (autoupgrade) is fully accessible through `cli`. You can read all the details [here]({{< ref "/9/basics/keeping-up-to-date/upgrade-module/upgrade-cli" >}}).
+Update assistant module (autoupgrade) is fully accessible through `cli`. You can read all the details [here]({{< ref "/9/basics/keeping-up-to-date/upgrade-module/upgrade-cli" >}}).
 
 ## Manual upgrade
 
 {{% notice warning %}}
 **Important**
 
-Manual upgrade without `autoupgrade` module is not possible at the moment. We recommend using [cli]({{< ref "/9/basics/keeping-up-to-date/upgrade-module/upgrade-cli" >}})
-mechanism from the upgrade assistant module.
+Manual upgrade without `Update assistant` module is not possible at the moment. We recommend using [cli]({{< ref "/9/basics/keeping-up-to-date/upgrade-module/upgrade-cli" >}})
+mechanism from the update assistant module.
 {{% /notice %}}
 
 ### Release download
@@ -129,7 +129,7 @@ Once the files have been copied, your shop database is ready to be upgraded.
 Some web hosting providers gives you two user accounts to access your database. One with full privileges the other for using in scripts with limited rights. To be able to use this Database upgrade script you have to use the account with full privileges.
 {{% /notice %}}
 
-The database migration scripts are stored in the `autoupgrade` module. If not present in your modules folder, download it and unzip it there.
+The database migration scripts are stored in the `Update assistant` module. If not present in your modules folder, download it and unzip it there.
 
 Upgrading the database is a step of the process ran by the upgrade module. It can be independantly triggered from the command line even if the module is uninstalled:
 
